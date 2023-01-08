@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { SideBarComponent } from './componets/side-bar/side-bar.component';
 import { MediaPlayerComponent } from './componets/media-player/media-player.component';
 import { HeaderUserComponent } from './componets/header-user/header-user.component';
+import { CardPlayerComponent } from './componets/card-player/card-player.component';
+import { SectionGenericComponent } from './componets/section-generic/section-generic.component';
 
 
 
@@ -10,7 +12,9 @@ import { HeaderUserComponent } from './componets/header-user/header-user.compone
   declarations: [
     SideBarComponent,
     MediaPlayerComponent,
-    HeaderUserComponent
+    HeaderUserComponent,
+    CardPlayerComponent,
+    SectionGenericComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +22,9 @@ import { HeaderUserComponent } from './componets/header-user/header-user.compone
   exports: [
     SideBarComponent,
     MediaPlayerComponent,
-    HeaderUserComponent
+    HeaderUserComponent,
+    CardPlayerComponent,
+    SectionGenericComponent
   ]
 })
 export class SharedModule { }
