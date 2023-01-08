@@ -1,0 +1,12 @@
+<h3>Pagina de Auth</h3>
+<ng-container *ngTemplateOutlet="probarContainer"></ng-container>
+
+<ng-template #probarContainer>
+    <div *ngIf="false;else siNo">
+        <h1>hola Mundo</h1>
+    </div>
+</ng-template>
+
+<ng-template #siNo>
+    <h1>Adios Mundo Cruel</h1>
+</ng-template>
