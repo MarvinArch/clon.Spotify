@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TrackModel } from '@core/models/tracks.model';
 
 @Component({
   selector: 'app-section-generic',
@@ -9,5 +10,5 @@ export class SectionGenericComponent {
   //la anotacion input permite el paso un dato de parametro
   @Input() title: string =''
   @Input() mode: 'small' | 'big' = 'big'
-  @Input() dataTracks: any
+  @Input() dataTracks: Array<TrackModel>=[]
 }
