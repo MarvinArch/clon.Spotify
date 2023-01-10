@@ -22,7 +22,7 @@
 }
 
 .play-list-rows {
-    width: 60%;
+    width: 100%;
     list-style: none;
     display: grid;
     grid-template-columns: 3fr 2fr 2fr 1fr;

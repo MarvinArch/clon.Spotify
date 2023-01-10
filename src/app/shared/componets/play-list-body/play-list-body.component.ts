@@ -10,11 +10,24 @@ import * as dataRaw from '@dataJson/traks.json'
 export class PlayListBodyComponent implements OnInit{
   
   @Input() tracks: Array<TrackModel>=[];
+  optionsort: {
+    property:string |null
+    order: string
+  }={
+    property: null,
+    order: 'asc'
+  }
 
   ngOnInit(): void {
     const {data}: any=(dataRaw as any).default
     this.tracks=data
-    console.log(data)
-    console.log(this.tracks.length+'-----------------------------------------------------')
   }
+
+  changesort(property: string): void {
+    const { order }= this.optionsort
+    this.optionsort ={
+      property,
+      order: order==='asc' ? 'desc' : 'asc'
+    }
+  } 
 }

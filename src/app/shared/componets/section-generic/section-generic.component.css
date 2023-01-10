@@ -3,6 +3,18 @@
     margin-bottom: 2rem;
 }
 
+@media (max-height: 799px){
+    .big{
+        min-height: 130vh 
+    
+    }}
+
+@media  (min-height: 800px){
+.large{
+    min-height: 110vh !important
+
+}}
+
 .section--generic__player--zone .player--list {
     display: grid;
     list-style: none;
